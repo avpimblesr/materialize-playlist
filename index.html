@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d4cd10c594.js" crossorigin="anonymous"></script>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <!-- local styles -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Photo Ninja</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+
+      <div class="container">
+        <a href="" class="brand-logo">Photo Ninja</a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <!-- main nav items -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+          <!-- tool tips and font awesome icons -->
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-2" data-tooltip="This is Instragram">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-2" data-tooltip="This is Facebook">
+              <i class="fab fa-facebook"></i>
+            </a></li>
+
+          <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-2" data-tooltip="This is Twitter">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+        </ul>
+
+        <!-- side nav items -->
+        <ul id="mobile-menu" class="sidenav grey lighten-2">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+  <!-- use ScrollSpy to scroll to each row in this container (id) instead if abruptly jumping to it -->
+  <section id="photos" class="container section scrollspy">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/portrait.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Portraits</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem perferendis reiciendis, debitis
+          eveniet est quaerat et mollitia minus eum aut doloribus dolorum perspiciatis consectetur nam, blanditiis,
+          illum obcaecati nisi molestias!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="img/city.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem perferendis reiciendis, debitis
+          eveniet est quaerat et mollitia minus eum aut doloribus dolorum perspiciatis consectetur nam, blanditiis,
+          illum
+          obcaecati nisi molestias!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/nature.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Nature</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem perferendis reiciendis, debitis
+          eveniet est quaerat et mollitia minus eum aut doloribus dolorum perspiciatis consectetur nam, blanditiis,
+          illum
+          obcaecati nisi molestias!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/street.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section id="services" class="container section scrollspy">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?</p>
+      </div>
+
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+
+        <!-- tab content -->
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Photography - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi
+            magnam earum ab?
+          </p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+          </p>
+        </div>
+
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4">EDITING</p>
+          <p>Editing - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam
+            earum ab?
+          </p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <section id="contact" class="section container scrollspy">
+    <div class="row">
+      <!-- info section -->
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+      </div>
+
+      <!-- contact form -->
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea name="" id="message" cols="30" rows="10" class="materialize-textarea"></textarea>
+            <label for="message">Your message</label>
+          </div>
+
+          <!-- calendar -->
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+
+          <!-- service options -->
+          <div class="input-field">
+            <p>Services required...</p>
+            <p>
+              <label>
+                <input type="checkbox" name="" id="">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="" id="">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, officia eum commodi magnam earum ab?
+        </div>
+
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li>
+              <i class="fab fa-facebook"></i>
+              <a href="#" class="grey-test text-lighten-3">Facebook</a>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+              <a href="#" class="grey-test text-lighten-3">Twitter</a>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a href="#" class="grey-test text-lighten-3">Linked In</a>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+              <a href="#" class="grey-test text-lighten-3">Instragram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Photo Ninja</div>
+    </div>
+  </footer>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+
+  <!-- Materialize CSS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js">
+  </script>
+
+  <!-- jQuery functions -->
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+
+      // the materialbox method toggles an image to 
+      // and from full-screen mode when clicked
+      $('.materialboxed').materialbox();
+
+      $('.parallax').parallax();
+
+      // tabs point to components or elements with a given id on a page.
+      // when a tab is selected, it displays its component while hiding
+      // the components of the other tabs in its group.
+      $('.tabs').tabs();
+
+      // displays a datepicker on screen. The 'disableWeekends' option
+      // will disable weekends in date picker
+      $('.datepicker')
+        .datepicker({
+          disableWeekends: true
+        });
+
+      $('.tooltipped').tooltip();
+
+      // scrollSpy will scroll the screen when a designated link is clicked,
+      // instead of abruptly jumbing to the new location
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+
+</body>
+
+</html>
